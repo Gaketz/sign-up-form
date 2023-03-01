@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="content">
+        <div class="picture">
+            <img src="./assets/halie-west-25xggax4bSA-unsplash.jpg" class="leafs" alt="leafs">
+            <div class="photo-container">
+                <div class="logo-container">
+                    <img src="./assets/odin-lined.png" alt="logo" class="image-logo">
+                    <h1>ODIN</h1>
+                </div>
+                <div class="picture-footer">
+                    <p>Photo by <a href="#">Halie West</a> on <a href="#">Unsplash</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+        <div class="first-container">
+            <h2>This is not a real online service! You know you need something </br> like this in your life to help you realize your deepest dreams. </br>
+                Sign up <em>now</em> to get started.</h2>
+            <h2>You <em>know</em> you want to.</h2>
+        </div>
+        <div class="second-container">
+            <h3>Let's do this!</h3>
+            <form>
+                <div class="first-form">
+                <div>
+                    <label for="first-name">FIRST NAME</label>
+                    <input type="text" id="first-name" value="" placeholder="Enter your name" required />
+                </div>
+                <div>
+                    <label for="email">EMAIL</label>
+                    <input type="email" id="email" value="" placeholder="Enter your email" required/>
+                </div>
+                <div>
+                    <label for="pwd">PASSWORD</label>
+                    <input type="password" id="pwd" class="pwd" value="" placeholder="Enter your password" required pattern="/^[a-zA-Z0-9!@#\$%\^\&*_=+-]{8,12}$/g"/>
+                </div>
+            </div>
+            <div class="second-form">
+                <div>
+                    <label for="last-name">LAST NAME</label>
+                    <input type="text" id="last-name" value="" placeholder="Enter your last name" required />
+                </div>
+                <div>
+                    <label for="tel">PHONE NUMBER</label>
+                    <input type="tel" id="tel" value="" required placeholder="Enter your phone number"/>
+                </div>
+                <div>
+                    <label for="pwd-con">CONFIRM PASSWORD</label>
+                    <input type="password" class="pwd" id="pwd-con" value="" placeholder="Repeat your password" required pattern="/^[a-zA-Z0-9!@#\$%\^\&*_=+-]{8,12}$/g"/>
+                </div>
+            </div>
+            </form>
+        </div>
+        <div class="third-container">
+            <button>Create Account</button>
+            <p>Already have an account? <a href="#">Log in</a> </p>
+        </div>
+    </div>
+</div>
+    <script src="./app.js"></script>
+</body>
+
+</html>
